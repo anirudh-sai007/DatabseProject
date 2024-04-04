@@ -1,0 +1,31 @@
+<div style="background-color:#92a8d1; text-align:center; font-size: 450%;">
+    <div style="background-color:blac; text-align:center; margin-top: 0%;">
+        <form action="{% url 'registeruser' %}" method = "post" onsubmit="return validate()">
+            {% csrf_token %}
+            <h3>Register User</h3>
+            <input type="text" id = "firstname" name = "firstname" placeholder="First Name">
+            <input type="text" id = "lastname" name = "lastname" placeholder="Last Name">
+            <select id="gender" name="gender">
+                <option value="" selected data-default>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                </select>
+            <input type="text" id = "emailid" name = "emailid" placeholder="Email Id">
+            <select id="vaccinated" name="vaccinated">
+                <option value="" selected data-default>Vaccinated?</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            <select id="usertype" name="usertype">
+                <option value="" selected data-default>User/Service Type</option>
+                <option value="1">Customer</option>
+                <option value="2">Plumber</option>
+                <option value="3">Carpenter</option>
+                <option value="4">Electrician</option>
+                <option value="5">Mechanic</option>
+                <option value="6">House Cleaner</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>

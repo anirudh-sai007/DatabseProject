@@ -1,0 +1,23 @@
+<div style="background-color:#92a8d1; text-align:center; font-size: 450%;">
+    <div style="background-color:blac; text-align:center; margin-top: 0%;">
+        <h3>Customer Details</h3>
+    <table border="1">
+         <th>Customer_Id</th>
+         <th>Customer_Name</th>
+         <th>Gender</th>
+         <th>Email_id</th>
+         <th>is_vaccinated</th>
+
+        {% for edetail in edetails %}
+            <tr>
+                <td>{{edetail.id}}</td>
+                <td>{{edetail.first_name}}{{edetail.last_name}}</td>
+                <td>{{edetail.gender}}</td>
+                <td>{{edetail.email_id}}</td>
+                <td>{{ </td>
+            </tr>
+
+        {% endfor %}
+    </table>
+    </div>
+</div>

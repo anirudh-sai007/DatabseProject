@@ -1,0 +1,22 @@
+<div style="background-color:#92a8d1; text-align:center; font-size: 450%;">
+    <div style="background-color:blac; text-align:center; margin-top: 0%;">
+        <h3>Inferior Feedback By Users</h3>
+    <table border="1">
+        <th>User Id</th>
+         <th>Name</th>
+         <th>Booking Id</th>
+         <th>Rating</th>
+         <th>Comments</th>
+        {% for bdetail in bdetails %}
+            <tr>
+                <td>{{bdetail.id}}</td>
+                <td>{{bdetail.first_name}} {{bdetail.last_name }}</td>
+                <td>{{bdetail.book_id}}</td>
+                <td>{{bdetail.rating}}</td>
+                <td>{{bdetail.comments}}</td>
+            </tr>
+
+        {% endfor %}
+    </table>
+    </div>
+</div>

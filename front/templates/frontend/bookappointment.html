@@ -1,0 +1,19 @@
+<div style="background-color:#92a8d1; text-align:center; font-size: 450%;">
+    <div style="background-color:blac; text-align:center; margin-top: 0%;">
+        <form action="{% url 'bookappointment' %}" method = "post" onsubmit="return validate()">
+            {% csrf_token %}
+            <h3>Book appointment</h3>
+            <select id="servicetype" name="servicetype">
+                <option value="" selected data-default>User/Service Type</option>
+                <option value="2">Plumber</option>
+                <option value="3">Carpenter</option>
+                <option value="4">Electrician</option>
+                <option value="5">Mechanic</option>
+                <option value="6">House Cleaner</option>
+            </select>
+            <input type="text" id = "userid" name = "userid" placeholder="User Id">
+            <input type="text" id = "description" name = "description" placeholder="Description">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>

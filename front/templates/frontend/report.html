@@ -1,0 +1,21 @@
+<div style="background-color:#92a8d1; text-align:center; font-size: 450%;">
+    <div style="background-color:blac; text-align:center; margin-top: 0%;">
+        <h3>Reports</h3>
+    <table border="1">
+        <th>Service Id</th>
+         <th>Service Name</th>
+         <th>Number of Booking</th>
+         <th>Total_Earned</th>
+
+        {% for rdetail in rdetails %}
+            <tr>
+                <td>{{rdetail.id}}</td>
+                <td>{{rdetail.type}}</td>
+                <td>{{rdetail.num_bookings}}</td>
+                <td>{{rdetail.total_income}}</td>
+            </tr>
+
+        {% endfor %}
+    </table>
+    </div>
+</div>
